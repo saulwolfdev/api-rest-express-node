@@ -1,7 +1,0 @@
-{
-    "products":[
-        {"id":0,"name":"tv","price":100},
-        {"id":1,"name":"iphone","price":200},
-        {"id":2,"name":"ipad","price":300}
-    ]
-}

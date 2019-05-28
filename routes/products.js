@@ -10,7 +10,7 @@ router.route("/")
         res.json({products:products})
        })
        .post((req,res)=>{
-        console.log("recibiendo datos")
+        console.log(req.body)
         res.json("received")
         })
 
