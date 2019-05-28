@@ -11,7 +11,8 @@ function logger(req,res,next){
     next()
 }
 app.use(express.json())
-app.use(logger)
+// app.use(logger)
+app.use(morgan("dev"))
 
 app.get("/",(req,res)=>{
     res.send("GET")
