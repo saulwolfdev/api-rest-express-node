@@ -24,7 +24,8 @@ app.use(morgan("dev"))
 // })
 app.get("/",(req,res)=>{
    const data=[{name:"Saul"},{name:"Sama"},{name:"Saint"}]
-    res.render("index.ejs",{people:data})
+   console.log(process.env.PORT) 
+   res.render("index.ejs",{people:data})
 })
 
 app.get("/User",(req,res)=>{
