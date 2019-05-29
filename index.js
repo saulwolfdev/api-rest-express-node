@@ -1,5 +1,6 @@
 const morgan=require("morgan")
 const bodyParser=require("body-parser")
+require("dotenv").config()
 
 const express = require("express")
 const app =express()
@@ -24,7 +25,6 @@ app.use(morgan("dev"))
 // })
 app.get("/",(req,res)=>{
    const data=[{name:"Saul"},{name:"Sama"},{name:"Saint"}]
-   console.log(process.env.PORT) 
    res.render("index.ejs",{people:data})
 })
 
