@@ -8,7 +8,7 @@ const app =express()
 //Settings
 
 app.set("AppName","Wolf")
-app.set("port",3000)
+app.set("port",5000)
 app.set("view engine", "ejs")
 
 //middlewares
@@ -24,7 +24,7 @@ app.use(morgan("dev"))
 //     res.send("GET")
 // })
 app.get("/",(req,res)=>{
-   const data=[{name:"Saul"},{name:"Sama"},{name:"Saint"}]
+   const data=[{name:"Saulll"},{name:"Samaaaa"},{name:"Saint"}]
    res.render("index.ejs",{people:data})
 })
 
