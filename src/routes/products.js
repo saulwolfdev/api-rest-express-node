@@ -3,13 +3,12 @@ const express=require("express");
 const router=express.Router();
 
 
-router.route("/")
-	.get((req,res)=>{
-		res.json({products:[]})
-	})
-	.post((req,res)=>{
 
-	});
+//CONTROLLERS
+const {getProducts,addProducts} =require("../controllers/products");
+router.route("/")
+	.get(getProducts)
+	.post(addProducts);
 
 
 
